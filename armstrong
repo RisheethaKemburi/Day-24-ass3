@@ -1,0 +1,17 @@
+#include<stdio.h>
+main(){
+	int n,r,sum=0,temp,s,e;
+	scanf("%d",&s);
+	scanf("%d",&e);
+	for(n=s;n<=e;n++){
+		temp=n;
+		while(temp!=0){
+			r=temp%10;
+			temp=temp/10;
+			sum=sum+(r*r*r);
+		}
+		if(sum==n)
+		printf("%d ",n);
+	}
+	printf("\n");
+}
